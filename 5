@@ -1,14 +1,14 @@
 1. Write a SQL query which sets the "Active" flag of the FHLB Borrowing account to "1" from dbo.Accounts table:
 
 Solution : 
-[UPDATE] dbo.Accounts
-[SET] Active = 1
-[WHERE] AccountName = 'FHLB Borrowing';
+We use [UPDATE] dbo.Accounts
+Then we use [SET] Active = 1
+And the final step is to select [WHERE] AccountName = 'FHLB Borrowing';
 
 
 2. Write a SQL query which joins both tables dbo.Accounts and dbo.AccountType and shows the AccountName and AccountType of all records
 
 Solution : 
-[SELECT] A.AccountName, AT.AccountType
-[FROM] dbo.Accounts A
-[JOIN] dbo.AccountType AT ON A.ID = AT.AccountID;
+We use [SELECT] to join A.AccountName and AT.AccountType.
+Then we select [FROM] dbo.Accounts A.
+And the final step is to use [JOIN] dbo.AccountType AT ON A.ID = AT.AccountID;
